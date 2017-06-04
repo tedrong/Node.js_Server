@@ -1,0 +1,35 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+
+<head>
+	<title>IOT Integrated Management Platform</title>
+	<style>
+		body{padding-top:80px;}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<!-- <p><%= JSON.stringify(jobs) %></p> -->
+		<% var keys = Object.keys(jobs); %>
+
+		<form action="/detection/job/detail" method="post">
+
+			<% for(var i=0; i<keys.length; i++) { %>
+
+				<div class="form-group" class>
+
+					<input type="checkbox" name="info" value=<%= keys[i] %><%= jobs[keys[i]] %>>
+					<label><%= jobs[keys[i]] %></label>
+					<label><%= keys[i] %></label>
+				</div>
+			<% } %>
+			<button type="submit" class="btn btn-warning btn-lg">Stop</button>
+		</form>
+
+	</div>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- load fontawesome -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "iot",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "*",
+    "body-parser": "~1.17.1",
+    "connect-flash": "*",
+    "cookie-parser": "~1.4.3",
+    "dateformat": "^2.0.0",
+    "debug": "~2.6.3",
+    "ejs": "*",
+    "express": "~4.15.2",
+    "express-session": "*",
+    "jade": "~1.11.0",
+    "jsdom": "*",
+    "method-override": "*",
+    "mongoose": "*",
+    "morgan": "~1.8.1",
+    "passport": "*",
+    "passport-facebook": "*",
+    "passport-google-oauth": "*",
+    "passport-local": "*",
+    "passport-twitter": "*",
+    "redis": "^2.7.1",
+    "request": "*",
+    "serve-favicon": "~2.4.2"
+  },
+  "description": "ndhu wise lab iot platform prototype",
+  "main": "app.js",
+  "author": "tedrong",
+  "license": "ISC"
+}
